@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+   
+    
+
+    <script>
+const h1 = document.createElement('h1');
+const element = document.getElementById('root');
+h1.innerText="Hoang tuan anh "
+h1.id ='hoanganhtuan'
+h1.className="lkasdh"
+h1.style=' color:red;fontSize:24px; backgroundColor:yellow'; // cahc 1 
+Object.assign(h1.style,{
+    color:'blue',
+    fontSize:'28px',
+    backgroundColor:'green'  // cach 2  
+})
+
+console.log(h1);
+
+element.appendChild(h1);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+</body>
+<script>
+    // const h1dom = document.createElement('h1')
+    // h1dom.innerText = 'Hoang tuan anh '
+    // h1dom.title="ictu"
+    // document.body.appendChild(h1dom)
+
+    // const h1react = React.createElement('h1',{
+    //     title:'demo',
+    //     className:'hoangtuananh'
+    // },'hoangtuananh')
+    // console.dir(h1dom);
+    // console.log(h1react);
+    // const theul = document.createElement('ul')
+    // theul.className = 'hoangtuananh'
+    // theul.title = 'Demo'
+    // const theli = document.createElement('li')
+    //    theli.className = 'ictu'
+    //    theli.title = 'the li demo'
+    //    theli.innerText = ' the li so 1'
+    // const theli2 = document.createElement('li')
+    // theli2.className = 'ictu2'
+    // theli2.title = 'the li demo2'
+    // theli2.innerText = ' the li so 2'
+    // theul.appendChild(theli);
+    // theul.appendChild(theli2);
+    // document.body.appendChild(theul)
+// react
+
+const test_React=React.createElement('ul',
+{ className:'theul',},
+React.createElement('li',{  className:'ictu', title:'the li demo',  children:'the li so 1'
+})
+,React.createElement('li',{ className:'ictu',  title:'the li demo', children:'the li so 1'
+})
+
+)
+console.log(test_React);
+
+
+
+</script>
+</html>
